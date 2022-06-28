@@ -1,0 +1,165 @@
+.club {
+    color: #333;
+    height: 100vh;
+    width: 100%;
+    line-height: 2.5em;
+    font-size: 1rem;
+}
+
+.club h2 {
+    text-decoration: underline solid orange;
+    text-underline-offset: 0.25em;
+    padding-bottom: 2em;
+}
+
+.club a {
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #222;
+}
+
+.club a:visited {
+    color: unset;
+}
+
+.club section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.club a {
+    margin-top: 2em;
+}
+
+.club button {
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    background-color: #fff;
+    border: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.club button:hover {
+    color: orange;
+    transition: ease 0.5s;
+}
+
+.link-item .btn_clair {
+    background-color: #333;
+    color: #fff;
+}
+
+.club h1 {
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+.presentation h1 {
+    font-size: 2.5rem;
+}
+
+.ecole,
+.service {
+    background-color: #444;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.club img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: #333 3px 4px 5px 0px;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    padding: 3em;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid__item,
+.presentation {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-align-last: center;
+    padding: 0.2em;
+}
+
+.club {
+    background: url('../../public/images/kaya-club.png') no-repeat center center/cover;
+}
+
+@media screen and (max-width: 600px) {
+    
+    #wallpaper {
+        height: 100vh;
+    }
+
+    .club section {
+        height: fit-content;
+    }
+}
+
+@media screen and (min-width:600px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .item-grid {
+        flex-wrap: nowrap;
+    }
+
+    .presentation .item-grid {
+        flex-wrap: wrap;
+    }
+
+    .grid__item {
+        padding: 3rem;
+    }
+
+    .grid__item.right {
+        order: 1;
+    }
+
+    .grid__item.left {
+        order: 2;
+    }
+
+    .club p {
+        max-width: 600px;
+    }
+
+
+
+}

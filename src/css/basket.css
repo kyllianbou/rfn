@@ -1,0 +1,102 @@
+.basket {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    top: 5em;
+    right: 0;
+    padding: 1em;
+    position: fixed;
+    background-color: #fff;
+    border-radius: 50px 0 0 50px;
+    height: 50px;
+    width: fit-content;
+}
+
+.basket.actif {
+    animation: grow .4s ease-in-out forwards;
+}
+
+.basket.non-actif {
+    animation: shrink .4s ease-in-out forwards;
+}
+
+@keyframes shrink {
+    from {
+        width: 10.5em;
+    }
+    to {
+        width: 64px;
+    }
+}
+
+@keyframes grow {
+    from {
+        width: 64px;
+    }
+    to {
+        width: 10.5em;
+    }
+}
+
+.basket svg {
+    font-size: 2em;
+    color: orange;
+    cursor: pointer;
+}
+
+.basket svg.actif {
+    transform: rotate(-360deg);
+    transition: .4s ease-in-out;
+}
+
+.basket svg.non-actif {
+    transform: rotate(0deg);
+    transition: .4s ease-in-out;
+}
+
+.basket .txt_panier {
+    color: #333;
+    font-weight: 700;
+    position: fixed;
+    top: 5.9em;
+    right: 1em;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.basket .txt_panier.non-actif {
+    animation: disappear-right .4s ease-in-out forwards;
+}
+
+.basket .txt_panier.actif {
+    animation: appear-right .4s ease-in-out forwards;
+}
+
+@keyframes appear-right {
+    from {
+        transform: translateX(7em);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes disappear-right {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        transform: translateX(7em);
+        opacity: 0;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.box-profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.profil nav{
+    background-color: rgb(26, 26, 26);
+}
+
+.box-profil article.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+}
+
+.box-profil article.name button{
+    width: 150px;
+    height: 40px;
+    margin: 15px auto;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(204, 14, 14);
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.profil .box-profil article .avatar img{
+    width: 300px;
+    height: 300px;
+    background-color: #cecece;
+    clip-path: circle(40%);
+    
+}
+
+
+
+.avatar h2{
+    padding-bottom: 30px;
+}
+
+.preference{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+}
+
+.trait-profil{
+    background-color: #cecece;
+    height: 450px;
+    width: 5px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 970px) {
+    .profil nav{
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 801px) {
+    .trait-profil{
+        display: none;
+    }
+
+    .preference{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 400px;
+        height: 400px;
+        padding: 30px;
+        text-align: center;
+    }
+    
+}

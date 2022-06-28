@@ -1,0 +1,148 @@
+.panier {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    min-height: 95vh;
+    height: 100%;
+}
+
+.panier_container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.panier h2 {
+    color: #161413;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline solid orange;
+    text-underline-offset: 0.25em;
+    margin-bottom: 3em;
+}
+
+.panier_list {
+    display: grid;
+    position: relative;
+    grid-template-columns: (1, 1fr);
+    list-style-type: none;
+    gap: 2em;
+}
+
+
+.panier_list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    max-height: 9em;
+    border: 3px solid #333;
+    padding: 1em;
+    background: linear-gradient(#fff 0%, rgb(197, 197, 197) 100%);
+}
+
+.item_img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.item_txt {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.item_prix {
+    font-weight: 600;
+}
+
+.statut {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: 3px solid #333;
+    padding: 1em;
+}
+
+.statut h3 {
+    white-space: nowrap;
+}
+
+.statut p {
+    font-weight: 500;
+}
+
+.refuse {
+    color: red;
+}
+
+.en_attente {
+    color: grey;
+}
+
+.valide {
+    color: green;
+}
+
+.panier .bm-menu-wrap.burger {
+    top: 0;
+    left: 0;
+}
+
+.panier .bm-overlay {
+    top: 0;
+    left: 0;
+}
+
+.panier nav {
+    background-color: unset;
+}
+
+@media screen and (min-width: 967px) {
+
+    .panier nav {
+        background-color: #333;
+    }
+
+    .panier_list {
+        padding: 2em;
+        background: linear-gradient(28deg, orange 0%, #fff 100%);
+        border-radius: 0 20px 20px 0;
+        border: 3px solid #333;
+        border-left: none;
+    }
+
+    .panier_list::before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        height: 120%;
+        width: 3px;
+        background-color: #333;
+    }
+
+    .panier_list li {
+        border-radius: 0 10px 10px 0;
+        max-height: 7em;
+        position: relative;
+    }
+
+    .panier_list li::before {
+        content: "";
+        position: absolute;
+        left: -2em;
+        width: 2em;
+        background-color: #333;
+        height: 5px;
+    }
+}

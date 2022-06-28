@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(194, 194, 194);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+
+button {
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-shadow: 0 0 10px #333;
+}

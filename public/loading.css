@@ -1,0 +1,31 @@
+#preloader {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: visibility 1s, opacity 1s linear;
+}
+
+#preloader .loading_gif {
+    display: block;
+    height: 4em;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid rgb(207, 207, 207);
+    border-bottom: 2px solid rgba(255, 166, 0, 0.8);
+    animation: spinning 0.5s linear infinite;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

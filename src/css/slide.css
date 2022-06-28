@@ -1,0 +1,119 @@
+.slide_container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    gap: 2em;
+}
+
+.slide h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.slide button {
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    border: solid 3px #fff;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.slide button:hover {
+    background-color: #fff;
+    color: black;
+    transition: ease 0.5s;
+}
+
+#asso {
+    background-image: url("../img/home_bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#services {
+    background-image: url("../img/services_bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#kayak {
+    background-image: url("../img/kayak.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#ecole {
+    background-image: url(http://localhost:3000/static/media/bonnefemme.822f3931e08fe7ee3642.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#contact {
+    background-image: url("../img/contact_bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.numbers {
+    margin: 0 0 1em 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2em;
+    bottom: 0;
+    color: #fff;
+    font-size: 2em;
+    z-index: 99;
+    list-style-type: none;
+    gap: 2em;
+    user-select: none;
+}
+
+.numbers li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    padding: 0;
+    opacity: 0.6;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.25s ease;
+    text-shadow: #333 0 0 4px;
+}
+
+.number:hover {
+    opacity: 1;
+}
+
+.number.actif {
+    opacity: 1;
+    font-size: 1.9em;
+}
