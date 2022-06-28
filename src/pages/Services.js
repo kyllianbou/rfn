@@ -14,13 +14,10 @@ const Services = () => {
             <Basket />
             <Nav />
             <header className="services_header">
-                <h1>Nos services</h1>
+                <h1>Actualite</h1>
             </header>
             <article>
-                <section className="services_presentation">
-                    <h2>Présentation</h2>
-                    <p className="services_txt">Lorem ipsum dolor sit amet. Ut possimus omnis in saepe consectetur ut quidem galisum est alias. Est quos voluptatum ut assumenda velit et optio aspernatur sed temporibus ipsum. Aut voluptatem molestias aut temporibus Quis et aliquam temporibus. Et perspiciatis odit et voluptatem fugit et sint galisum ut quia nihil aut iste minus et nobis eligendi sed tempora beatae? Est vero minus vel sint enim est maxime nisi id officia officia sit accusantium placeat in voluptates voluptatem quo veritatis ipsa.</p>
-                </section>
+          
                 <hr></hr>
                 <section className="services_locations">
                     <h2>Nos produits à louer</h2>
@@ -35,13 +32,22 @@ const Services = () => {
                 <hr></hr>
                 <section id="services_prestations">
                     <h2>Prestations encadrées</h2>
-                    <article id="liste_container">
-                        <ul id="liste_locations">
-                        {Prestation.map((prestation, index) => (
-                        <CardsP key={index} prestation={prestation} />
-                    ))}
-                        </ul>
-                    </article>
+                    <section className="Kayak">
+                    <div className="container">
+                        <div className="item-grid">
+                            <div className="grid__item left">
+                                <img src="./images/kaya-img.png" alt="kayak"></img>
+                            </div>
+                            <div className="grid__item d-flex right">
+                                <h2>Kayak polo</h2>
+                                <p>Lorem ipsum dolor sit amet,s elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit </p>
+                                <div to="/Kayak" className='link-item'>
+                                    <button className='btn_clair'>En savoir plus</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 </section>
             </article>
             <Footer />

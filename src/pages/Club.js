@@ -10,7 +10,7 @@ const Club = () => {
             <Nav />
             <div className="club">
                 <section id="wallpaper">
-                    <h1>Le Club</h1>
+                    <h1>Qui Somme Nous</h1>
                 </section>
                 <section className="presentation">
                     <div className="container">
