@@ -21,20 +21,17 @@ const Services = () => {
                     <h2>Nos produits à louer</h2>
                     <article className="liste_container">
                         <ul className='liste_locations'>
-                        {Location.map((kayak, index) => (
-                        <Cards key={index} kayak={kayak} />
-                    ))}
+                    
                         </ul>
                     </article>
                 </section>
                 <hr></hr>
                 <section id="services_prestations">
-                    <h2>Prestations encadrées</h2>
                     <section className="Kayak">
                     <div className="container">
                         <div className="item-grid">
                             <div className="grid__item left">
-                                <img src="./images/image_rfn6.jpg" alt="kayak"></img>
+                                <img className="imagess" src="./images/image_rfn6.jpg" alt="kayak"></img>
                             </div>
                             <div className="grid__item d-flex right">
                                 <h2>Kayak polo</h2>
