@@ -43,19 +43,19 @@
 }
 
 #asso {
-    background-image: url("../img/home_bg.png");
+    background-image: url("../images/image_rfn8.jpg");
     background-size: cover;
     background-position: center;
 }
 
 #services {
-    background-image: url("../img/services_bg.png");
+    background-image: url("../images/image_rfn9.jpg");
     background-size: cover;
     background-position: center;
 }
 
 #kayak {
-    background-image: url("../img/kayak.png");
+    background-image: url("../images/image_rfn10.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -67,7 +67,7 @@
 }
 
 #contact {
-    background-image: url("../img/contact_bg.png");
+    background-image: url("../images/image_rfn1.jpg");
     background-size: cover;
     background-position: center;
 }

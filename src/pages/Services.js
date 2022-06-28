@@ -2,8 +2,6 @@ import React from "react";
 import '../css/services.css';
 import Cards from "../components/Card";
 import { Location } from "../components/Location";
-import { Prestation } from "../components/Prestation";
-import CardsP from "../components/CardP";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Basket from '../components/Basket';
@@ -36,7 +34,7 @@ const Services = () => {
                     <div className="container">
                         <div className="item-grid">
                             <div className="grid__item left">
-                                <img src="./images/kaya-img.png" alt="kayak"></img>
+                                <img src="./images/image_rfn6.jpg" alt="kayak"></img>
                             </div>
                             <div className="grid__item d-flex right">
                                 <h2>Kayak polo</h2>

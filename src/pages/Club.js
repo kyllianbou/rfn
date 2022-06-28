@@ -24,7 +24,7 @@ const Club = () => {
                     <div className="container">
                         <div className="item-grid">
                             <div className="grid__item">
-                                <img src="./images/kaya-img.png" alt='kayak'></img>
+                                <img src="./images/images_rfn6.jpg" alt='kayak'></img>
                             </div>
                             <div className="grid__item d-flex">
                                 <h2>Ecole de pagaie</h2>
@@ -40,7 +40,7 @@ const Club = () => {
                     <div className="container">
                         <div className="item-grid">
                             <div className="grid__item left">
-                                <img src="./images/kaya-img.png" alt="kayak"></img>
+                                <img src="./images/images_rfn6.jpg" alt="kayak"></img>
                             </div>
                             <div className="grid__item d-flex right">
                                 <h2>Kayak polo</h2>
@@ -56,7 +56,7 @@ const Club = () => {
                     <div className="container">
                         <div className="item-grid">
                             <div className="grid__item">
-                                <img src="./images/kaya-img.png" alt='kayak'></img>
+                                <img src="./images/images_rfn6.jpg" alt='kayak'></img>
                             </div>
                             <div className="grid__item d-flex">
                                 <h2>Services</h2>

@@ -28,7 +28,7 @@ const Slide = () => {
                     <a className='number three' href="#kayak" onClick={ActiveClick}>3</a>
                 </li>
                 <li>
-                    <a className='number four' href="#ecole" onClick={ActiveClick}>4</a>
+                    <a className='number four' href="#contact" onClick={ActiveClick}>4</a>
                 </li>
             </ul>
             <div className="slide active" id="asso">
