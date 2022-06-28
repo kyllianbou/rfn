@@ -25,7 +25,7 @@ const Slide = () => {
                     <a className='number two' href="#services" onClick={ActiveClick}>2</a>
                 </li>
                 <li>
-                    <a className='number three' href="#kayak" onClick={ActiveClick}>3</a>
+                    <a className='number three' href="#galerie" onClick={ActiveClick}>3</a>
                 </li>
                 <li>
                     <a className='number four' href="#contact" onClick={ActiveClick}>4</a>
@@ -39,13 +39,13 @@ const Slide = () => {
                 <h1>Actualite</h1>
                 <NavLink to="/Services" className='link-item'><button>VOIR PLUS</button></NavLink>
             </div>
-            <div className="slide" id="kayak">
+            <div className="slide" id="galerie">
                 <h1>Partenaire</h1>
-                <NavLink to="/Kayak" className='link-item'><button>VOIR PLUS</button></NavLink>
+                <NavLink to="/galerie" className='link-item'><button>VOIR PLUS</button></NavLink>
             </div>
-            <div className="slide" id="ecole">
+            <div className="slide" id="contact">
                 <h1>Contact</h1>
-                <NavLink to="/Ecole" className='link-item'><button>VOIR PLUS</button></NavLink>
+                <NavLink to="/contact" className='link-item'><button>VOIR PLUS</button></NavLink>
             </div>
         
         </div>
