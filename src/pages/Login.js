@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../components/Nav';
+import Nav from '../components/nav';
 import '../css/login.css';
 import {signup,login, useAuth} from "../firebase"
 import {useRef,useState} from "react"

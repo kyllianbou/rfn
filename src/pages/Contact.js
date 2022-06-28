@@ -1,8 +1,8 @@
 import React from 'react';
-import '../css/contact.css';
+import '../css/Contact.css';
 import { AiFillPhone, AiFillMail } from 'react-icons/ai';
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
+import Nav from '../components/nav';
+import Footer from '../components/footer';
 import Form from '../components/Form';
 
 

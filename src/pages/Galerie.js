@@ -1,7 +1,7 @@
 import React from 'react';
 import "../css/galerie.css";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
+import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 const Galerie = () => {
     function setImageVisible(

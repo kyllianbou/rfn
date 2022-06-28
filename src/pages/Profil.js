@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../components/Nav';
+import Nav from '../components/nav';
 import '../css/profil.css';
 import {logout, useAuth} from "../firebase"
 import { useNavigate } from "react-router-dom";

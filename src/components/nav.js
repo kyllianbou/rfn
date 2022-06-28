@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import '../css/nav.css';
+import '../css/Nav.css';
 import { slide as Menu } from 'react-burger-menu';
 import { updateCurrentUser } from 'firebase/auth';
 import { getAuth } from "firebase/auth";
