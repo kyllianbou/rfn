@@ -1,5 +1,4 @@
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'React';
 import Acceuil from './pages/Acceuil';
 import Quisommenous from './pages/Quisommenous';
 import Activiter from './pages/Activiter';
@@ -7,7 +6,6 @@ import Projet from './pages/Projet';
 import Don from './pages/Don';
 import Contact from './pages/Contact';
 import Actualiter from './pages/Actualiter';
-import './css/all.css';
 
 
 

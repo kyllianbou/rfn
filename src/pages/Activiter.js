@@ -1,6 +1,5 @@
-import "../css/club.css";
+import React from 'React';
 import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 
 const Activiter = () => {
 

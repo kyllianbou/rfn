@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+ 
+  .navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    transition: 1s;
+    animation: slide_down 0.5s ease-out;
+    z-index: 100;
+  }
+ 
+  @keyframes slide_down {
+    from {
+      transform: translateY(-50px)
+    }
+ 
+    to {
+      transform: translateY(0);
+    }
+  }
+ 
+  nav.active {
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0 0 10px #555;
+  }
+ 
+  nav ul.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  nav ul.nav-links li {
+    list-style-type: none;
+    text-shadow: 0 0 10px #333;
+  }
+ 
+  nav ul.nav-links li .link-item,
+  .brand,
+  .connexion {
+    position: relative;
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    transition: all 0.25s ease-in-out;
+    text-shadow: 0 0 10px #333;
+  }
+ 
+  nav ul.nav-links li .link-item:hover,
+  .brand:hover,
+  .connexion:hover {
+    color: orange;
+  }
+ 
+  nav ul.nav-links li .link-item:hover:after {
+    transform: scaleX(1);
+  }
+ 
+  nav ul.nav-links li .link-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 20px;
+    height: 3px;
+    bottom: .5em;
+    left: 0;
+    background-color: orange;
+    transition: transform 0.25s ease-out;
+  }
+ 
+ 
+  Menu.burger,
+  #react-burger-menu-btn,
+  .bm-burger-bars {
+    display: none;
+  }
+ 
+  nav.bm-item {
+    display: flex;
+  }
+ 
+  @media screen and (max-width: 967px) {
+ 
+    Menu.burger,
+    #react-burger-menu-btn,
+    .bm-burger-bars {
+      display: block;
+    }
+ 
+    /* Position and sizing of burger button */
+    .bm-burger-button {
+      position: fixed;
+      width: 36px;
+      height: 30px;
+      right: 36px;
+      top: 36px;
+ 
+    }
+ 
+    .brand {
+      width: fit-content;
+    }
+ 
+    .navbar {
+      display: none;
+    }
+ 
+    #react-burger-menu-btn {
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      border: none;
+      font-size: 0px;
+      background: #3a5466;
+      cursor: pointer;
+    }
+ 
+    /* Color/shape of burger icon bars */
+    .bm-burger-bars {
+      background: #373a47;
+    }
+ 
+ 
+    /* Position and sizing of clickable cross button */
+    .bm-cross-button {
+      height: 24px;
+      width: 24px;
+      padding: 20px;
+      color: #373a47;
+    }
+ 
+    /* Color/shape of close button cross */
+    .bm-cross {
+      background: #bdc3c7;
+    }
+ 
+    /*
+   Sidebar wrapper styles
+   Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+   */
+ 
+    .bm-menu-wrap {
+      position: fixed;
+      height: 100%;
+ 
+    }
+ 
+    /* General sidebar styles */
+    .bm-menu {
+      background: #373a47;
+      padding: 2.5em 1.5em 0;
+      font-size: 1.15em;
+    }
+ 
+    /* Morph shape necessary with bubble or elastic */
+    .bm-morph-shape {
+      fill: #373a47;
+    }
+ 
+    /* Wrapper for item list */
+    .bm-item-list {
+      color: #b8b7ad;
+      padding: 0.8em;
+    }
+ 
+    /* Individual item */
+    .bm-item {
+      display: inline-block;
+    }
+ 
+    /* Styling of overlay */
+    .bm-overlay {
+      background: rgba(0, 0, 0, 0.3);
+    }
+ 
+    nav ul.nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }

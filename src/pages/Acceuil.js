@@ -1,13 +1,14 @@
-import "../css/club.css";
+import React from 'React';
 import Nav from "../components/Nav";
-import Footer from "../components/Footer";
 
 const Acceuil = () => {
 
     return (
         <>
             <Nav />
-         
+         <div className="header" >
+        <h1>Acceuil</h1>
+         </div>
         </>
     );
 
