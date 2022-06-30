@@ -1,6 +1,6 @@
 import "../css/club.css";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
+import Nav from "../components/nav";
+import Footer from "../components/footer";
 import { NavLink } from "react-router-dom";
 
 const Club = () => {
