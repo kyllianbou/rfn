@@ -6,7 +6,6 @@ import Galerie from './pages/Galerie';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import './css/all.css';
-import React, { useEffect, useState } from "react";
 
 
 
