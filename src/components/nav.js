@@ -2,12 +2,8 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../css/nav.css';
 import { slide as Menu } from 'react-burger-menu';
-import { updateCurrentUser } from 'firebase/auth';
-import { getAuth } from "firebase/auth";
-import { useAuth } from "../firebase";
 
 const Nav = () => {
-    const currentUser = useAuth();
     const [navbar, setNavbar] = useState(false);
 
     const changeBackground = () => {
@@ -34,8 +30,6 @@ const Nav = () => {
                         <li><NavLink to="/Contact" className='link-item'>contact</NavLink></li>
                 </ul>
 
-                {!currentUser && <NavLink to="/Login" className='connexion'>FAire un Don</NavLink>}
-                {currentUser && <NavLink to="/Profil" className='connexion'>{currentUser?.displayName}</NavLink>}
             </nav>
             <Menu className='burger'>
                 <nav>
@@ -47,8 +41,6 @@ const Nav = () => {
                         <li><NavLink to="/Galerie" className='link-item'>Partenaire</NavLink></li>
                         <li><NavLink to="/Contact" className='link-item'>contact</NavLink></li>
                     </ul>
-                    {!currentUser && <NavLink to="/Login" className='connexion'>Faire un Don</NavLink>}
-                    {currentUser && <NavLink to="/Profil" className='connexion'>{currentUser?.displayName}</NavLink>}
                 </nav>
             </Menu>
         </>
