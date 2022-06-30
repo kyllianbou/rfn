@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/slide.css';
-import Nav from '../components/nav';
+import Nav from '../components/Nav';
 import { NavLink } from 'react-router-dom';
 import Basket from '../components/Basket';
 import Footer from '../components/Footer'

@@ -1,9 +1,7 @@
 import React from "react";
 import '../css/services.css';
-import Cards from "../components/Card";
-import { Location } from "../components/Location";
-import Footer from "../components/footer";
-import Nav from "../components/nav";
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 import Basket from '../components/Basket';
 
 const Services = () => {
